@@ -22,6 +22,7 @@ public class CardDeliveryOrderTest {
 
     @Test
     void shouldRegisterPstv() {
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Санкт-Петербург");
         String day = LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.BACK_SPACE);
@@ -35,6 +36,7 @@ public class CardDeliveryOrderTest {
 
     @Test
     void shouldRegisterNgtvPhone(){
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Санкт-Петербург");
         String day = LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.BACK_SPACE);
@@ -47,6 +49,7 @@ public class CardDeliveryOrderTest {
 
     @Test
     void shouldRegisterNgtvName(){
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Санкт-Петербург");
         String day = LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.BACK_SPACE);
@@ -59,6 +62,7 @@ public class CardDeliveryOrderTest {
 
     @Test
     void shouldRegisterNgtvCity(){
+    open("http://localhost:9999");
     String day = LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.BACK_SPACE);
     $("[placeholder='Дата встречи']").setValue(day);
@@ -71,6 +75,7 @@ public class CardDeliveryOrderTest {
 
     @Test
     void shouldRegisterNgtvCBox(){
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Санкт-Петербург");
         String day = LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.BACK_SPACE);
@@ -83,6 +88,7 @@ public class CardDeliveryOrderTest {
 
     @Test
     void shouldRegisterNgtvCity2() {
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Saint P");
         String day = LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.BACK_SPACE);
@@ -96,6 +102,7 @@ public class CardDeliveryOrderTest {
 
     @Test
     void shouldRegisterNgtvName2() {
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Санкт-Петербург");
         String day = LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.BACK_SPACE);
@@ -109,6 +116,7 @@ public class CardDeliveryOrderTest {
 
     @Test
     void shouldRegisterNgtvPhone2() {
+        open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Санкт-Петербург");
         String day = LocalDate.now().plusDays(3).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         $("[placeholder='Дата встречи']").doubleClick().sendKeys(Keys.BACK_SPACE);
